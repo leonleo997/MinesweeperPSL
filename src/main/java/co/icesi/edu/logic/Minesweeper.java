@@ -30,10 +30,10 @@ public class Minesweeper {
 	}
 
 	/*
-	 * Verify if the game end. It ends if there the amount of marked mines is equals
+	 * Verify if the game ends. It ends if the amount of marked mines is equal
 	 * to the amount of mines on the board.
 	 * 
-	 * @return boolean that represent if the player won the game.
+	 * @return boolean that represents if the player won the game.
 	 */
 	public boolean isVictory() {
 		boolean victory = false;
@@ -56,17 +56,17 @@ public class Minesweeper {
 	}
 
 	/*
-	 * Play on the board. The player can mark or uncover a hide cell. It a cell
+	 * Play on the board. The player can mark or uncover a hidden cell. If a cell
 	 * contains a mine and it is uncovered, the game is over.
 	 * 
-	 * @param: row, it represents the row on the board
+	 * @param: row, it represents the rows on the board
 	 * 
-	 * @param: col, it represents the col on the board
+	 * @param: col, it represents the cols on the board
 	 * 
-	 * @param: action, it represents the action to do. It can be mark or uncover a
-	 * hide cell.
+	 * @param: action, it represents the action to do. It can mark or uncover a
+	 * hidden cell.
 	 * 
-	 * @return: boolean that represent if the game is over.
+	 * @return: boolean that represents if the game is over.
 	 */
 	public boolean play(int row, int col, char action) {
 		boolean isGameOver = false;
