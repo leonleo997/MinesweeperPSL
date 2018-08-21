@@ -1,4 +1,4 @@
-package co.icesi.edu.logic;
+//package co.icesi.edu.logic;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -110,7 +110,7 @@ public class Minesweeper {
 			while (!ms.isVictory()) {
 				System.out.println("Type the row, col and the action");
 				cad = bf.readLine();
-				split = cad.split(" ");
+				split = cad.split(" "); 
 				int row = Integer.parseInt(split[0]);
 				int col = Integer.parseInt(split[1]);
 				char action = split[2].charAt(0);

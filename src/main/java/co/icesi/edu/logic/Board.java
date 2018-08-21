@@ -1,4 +1,4 @@
-package co.icesi.edu.logic;
+//package co.icesi.edu.logic;
 
 import java.util.HashMap;
 import java.util.Random;
