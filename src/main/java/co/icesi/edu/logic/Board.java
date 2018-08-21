@@ -15,7 +15,7 @@ public class Board {
 	 */
 	public static final char UNSELECTED_CELL = '.';
 	/*
-	 * The cell is disabled. It can not be modified by the user.
+	 * The cell is disabled. It cannot be modified by the user.
 	 */
 	public static final char DISABLED_CELL = '-';
 	/*
@@ -28,7 +28,7 @@ public class Board {
 	 */
 	public static final boolean FLAG = true;
 	/*
-	 * The cell is hide
+	 * The cell is hidden
 	 */
 	public static final boolean HIDE = true;
 
@@ -50,12 +50,12 @@ public class Board {
 	private HashMap<String, Cell> cells;
 
 	/*
-	 * The board height
+	 * The board's height
 	 */
 	private int height;
 
 	/*
-	 * The board width
+	 * The board's width
 	 */
 	private int width;
 	/*
@@ -66,9 +66,9 @@ public class Board {
 	/*
 	 * The constructor fill the board
 	 * 
-	 * @param: heightParam, it represents the board height.
+	 * @param: heightParam, it represents the board's height.
 	 * 
-	 * @param: widthParam, it represents the board width.
+	 * @param: widthParam, it represents the board's width.
 	 * 
 	 * @param: minesAmountParam, it represents the amount of mines on the board.
 	 */
@@ -83,17 +83,17 @@ public class Board {
 	}
 
 	/*
-	 * Play on the board. The player can mark or uncover a hide cell. It a cell
+	 * Play on the board. The player can mark or uncover a hidden cell. If a cell
 	 * contains a mine and it is uncovered, the game is over.
 	 * 
-	 * @param: row, it represents the row on the board
+	 * @param: row, it represents the rows on the board
 	 * 
-	 * @param: col, it represents the col on the board
+	 * @param: col, it represents the cols on the board
 	 * 
-	 * @param: action, it represents the action to do. It can be mark or uncover a
-	 * hide cell.
+	 * @param: action, it represents the action to do. It can mark or uncover a
+	 * hidden cell.
 	 * 
-	 * @return: boolean that represent if the game is over.
+	 * @return: boolean that represents if the game is over.
 	 */
 	public boolean play(int row, int col, char action) {
 		boolean isGameOver = false;
@@ -235,11 +235,11 @@ public class Board {
 	}
 
 	/*
-	 * It add a mine in a cell and increments the digit inside the adjacent cells.
+	 * It adds a mine in a cell and increments the digit inside the adjacent cells.
 	 * 
-	 * @param: randomRow, it represents the cell row where is the mine.
+	 * @param: randomRow, it represents the cell row where the mine is.
 	 * 
-	 * @param: randomCol, it represents the cell col where is the mine.
+	 * @param: randomCol, it represents the cell col where the mine is.
 	 */
 	private void addMine(int randomRow, int randomCol) {
 		Cell mine = new Cell();
@@ -247,7 +247,7 @@ public class Board {
 		cells.put(randomRow + "," + randomCol, mine);
 
 		/*
-		 * increment the amount of adjacent mines over and below the mine position
+		 * increments the amount of adjacent mines over and below the mine position
 		 */
 		if (randomRow > 1) {
 			cells.get((randomRow - 1) + "," + randomCol).incrementAdjacentMines();
@@ -259,7 +259,7 @@ public class Board {
 		}
 
 		/*
-		 * increment the amount of adjacent mines on left and right the mine position
+		 * increments the amount of adjacent mines on left and right of the mine position
 		 */
 		if (randomCol > 1) {
 			cells.get(randomRow + "," + (randomCol - 1)).incrementAdjacentMines();
@@ -271,7 +271,7 @@ public class Board {
 		}
 
 		/*
-		 * increment the amount of adjacent mines on diagonals to mine position
+		 * increments the amount of adjacent mines on diagonals to mine position
 		 */
 		if (randomCol > 1 && randomRow > 1)
 			cells.get((randomRow - 1) + "," + (randomCol - 1)).incrementAdjacentMines();

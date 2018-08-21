@@ -6,7 +6,7 @@
 public class Cell {
 
 	/*
-	 * the content can be disabled, a number that represent the adjacent mines or
+	 * the content can be disabled, a number that represents the adjacent mines or
 	 * if it is a mine.
 	 */
 	private char content;
@@ -30,7 +30,7 @@ public class Cell {
 
 
 	/* 
-	 * When a cell is created the content is disabled, it is hide and 
+	 * When a cell is created the content is disabled, it is hidden and 
 	 * the flag is not marked
 	 */
 	public void initializeAsEmpty() {
@@ -40,7 +40,7 @@ public class Cell {
 	}
 	
 	/* 
-	 * When a cell is created the content is a mine, it is hide and 
+	 * When a cell is created the content is a mine, it is hidden and 
 	 * the flag is not marked
 	 */
 	public void initializeAsMine() {
@@ -50,7 +50,7 @@ public class Cell {
 	}
 
 	/*
-	 * Increment the amount of adjacent mines
+	 * Increments the amount of adjacent mines
 	 */
 	public void incrementAdjacentMines() {
 		if(content!='*') {
