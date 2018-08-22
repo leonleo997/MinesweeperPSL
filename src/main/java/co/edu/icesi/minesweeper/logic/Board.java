@@ -1,4 +1,4 @@
-//package co.icesi.edu.logic;
+//package co.edu.icesi.minesweeper.logic;
 
 import java.util.HashMap;
 import java.util.Random;
