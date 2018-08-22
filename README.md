@@ -40,7 +40,7 @@ Look the board:
 
 Type the row, col and the action. Each value separed by a blank space (For example:1 1 U)
 ```  
-We have to choose the position of your action. For example: I want to mark the cell located at 1,1:  
+Now, you have to choose the position of your action. For example: I want to mark the cell located at 1,1:  
 ```  
 1 1 M
 
