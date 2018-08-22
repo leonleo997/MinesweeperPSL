@@ -91,7 +91,7 @@ public class Minesweeper {
 				width = Integer.parseInt(split[1]);
 				minesAmount = Integer.parseInt(split[2]);
 			} catch (NumberFormatException e) {
-				System.out.println("You have to type numbers separed by blank spacess");
+				System.out.println("You have to type numbers separed by blank spaces");
 				throw new Exception();
 			}
 
