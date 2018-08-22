@@ -4,7 +4,7 @@
 **Cell phone number:** 3229105674  
 
 ## Description  
-This project has been developed in Java. It's a classic game of Minesweeper that is played using your terminal. When the game is begining you will see this:  
+This project has been developed in Java. It's a classic game of Minesweeper that is played using your terminal. When the game is beginning you will see this:  
 ```
 WELCOME TO THE GAME: MINESWEEPER
 First, type the board height, width and amount of mines. Each number separed by a blank space (For example:8 15 10)
