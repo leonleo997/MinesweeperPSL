@@ -35,23 +35,37 @@ public class BoardTest {
 		board = new Board(1, 15, 1);
 	}
 	
+	/*
+	 * Load a board that has five rows, four cols and twenty mines
+	 * on the board
+	 */
+	public void thirdScenario() {
+		board = new Board(5, 4, 20);
+	}
+	
+	
 	@Test
-	public void verifyMinesAmount() {
+	public void testMinesAmount() {
 		firstScenario();
+		verifyMinesAmount();
 		
+		secondScenario();
+		verifyMinesAmount();
+		
+		thirdScenario();
+		verifyMinesAmount();
+	}
+	
+	public void verifyMinesAmount() {
 		board.fillBoard();
-		
 		Collection<Cell> cellsContent = board.getCells().values();
 		int minesAmonut=0;
 		for (Cell cell : cellsContent) {
 			if(cell.getContent()==Board.MINE_CELL)
 				minesAmonut++;
 		}
-		
+		System.out.println(minesAmonut);
 		assertEquals("There should be "+board.getMinesAmount()+" mines", board.getMinesAmount(), minesAmonut);
-		
-		
-		
 	}
 	
 }
