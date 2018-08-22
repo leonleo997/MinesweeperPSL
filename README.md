@@ -8,7 +8,7 @@ If you want to play a game you have to:
 
 2. Open terminal and paste:  
 ```
-cd src/main/java/co/icesi/edu/logic/
+cd src/main/java/co/edu/icesi/minesweeper/logic/
 ```  
 
 3. Compile the java class using:  
@@ -28,7 +28,7 @@ If you want to play a game you have to:
 
 2. Open terminal and paste:  
 ```
-cd src\main\java\co\icesi\edu\logic\                                       
+cd src\main\java\co\edu\icesi\minesweeper\logic\                                       
 ```  
 
 3. Compile the java class using:  
