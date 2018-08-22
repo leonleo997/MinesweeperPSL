@@ -160,3 +160,5 @@ javac Board.java Cell.java Minesweeper.java
 ```
 java Minesweeper
 ```  
+## Unit tests  
+If you want to run the test classes, you will have to uncomment the package line from the java classes at the logic package.
