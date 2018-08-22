@@ -39,7 +39,7 @@ public class Minesweeper {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			System.out.println("WELCOME TO THE GAME: MINESWEEPER\n"
-					+ "First, type the board height, width and amount of mines (i.e, 8 15 10)");
+					+ "First, type the board height, width and amount of mines. Each number separed by a blank space (For example:8 15 10)");
 			String cad = bf.readLine();
 			
 			catchData(cad);
@@ -49,7 +49,7 @@ public class Minesweeper {
 				boolean victory = false;
 				boolean gameOver = false;
 				while (!victory) {
-					System.out.println("Type the row, col and the action");
+					System.out.println("\nType the row, col and the action. Each value separed by a blank space (For example:1 1 U)");
 					cad = bf.readLine();
 					String[] split = cad.split(" ");
 					int row = Integer.parseInt(split[0]);

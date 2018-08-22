@@ -1,3 +1,4 @@
+
 //package co.edu.icesi.minesweeper.logic;
 
 import java.util.HashMap;
@@ -98,7 +99,7 @@ public class Board {
 	public boolean play(int row, int col, char action) {
 		boolean isGameOver = false;
 		Cell cell = cells.get(row + "," + col);
-		if (action == UNCOVER && cell.isFlag()==!FLAG) {
+		if (action == UNCOVER && cell.isFlag() == !FLAG) {
 
 			switch (cell.getContent()) {
 			case MINE_CELL:
@@ -116,7 +117,7 @@ public class Board {
 				break;
 			}
 		} else if (action == MARK && cell.isHide() == HIDE) {
-			if(cell.isFlag())
+			if (cell.isFlag())
 				cell.setFlag(!FLAG);
 			else
 				cell.setFlag(FLAG);
@@ -178,24 +179,45 @@ public class Board {
 	 * @post: it returns a matrix that contains the board representation.
 	 */
 	public void show() {
-		
+
 		System.out.println("\nLook the board: ");
-		
+
+		for (int i = 1; i <= height; i++) {
+			if (i == 1)
+				System.out.print("	");
+			System.out.print(i + "	");
+		}
+		System.out.println();
+		for (int i = 1; i <= height; i++) {
+			if (i == 1)
+				System.out.print("	");
+			System.out.print("________");
+		}
+		System.out.println();
 		for (int i = 1; i <= width; i++) {
 			for (int j = 1; j <= height; j++) {
+				if (j == 1)
+					System.out.print(i + "	|");
 				Cell content = cells.get(j + "," + i);
 				if (content.isFlag())
-					System.out.print("P ");
+					System.out.print("P	");
 				else {
 					if (content.isHide())
-						System.out.print(". ");
+						System.out.print(".	");
 					else
-						System.out.print(content.getContent() + " ");
+						System.out.print(content.getContent() + "	");
 				}
 
 			}
-			System.out.println();
+			System.out.print("|\n");
 		}
+
+		System.out.print("	|");
+		for (int i = 1; i <= height; i++) {
+
+			System.out.print("________");
+		}
+		System.out.println();
 	}
 
 	/*
@@ -266,7 +288,8 @@ public class Board {
 		}
 
 		/*
-		 * increments the amount of adjacent mines on left and right of the mine position
+		 * increments the amount of adjacent mines on left and right of the mine
+		 * position
 		 */
 		if (randomCol > 1) {
 			cells.get(randomRow + "," + (randomCol - 1)).incrementAdjacentMines();
