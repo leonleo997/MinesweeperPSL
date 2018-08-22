@@ -1,4 +1,4 @@
-//package co.edu.icesi.minesweeper.logic;
+package co.edu.icesi.minesweeper.logic;
 
 /*
  * @author Yesid Leonardo López Sierra
