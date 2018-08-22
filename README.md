@@ -40,3 +40,14 @@ javac Board.java Cell.java Minesweeper.java
 ```
 java Minesweeper
 ```  
+### Shortcut for Linux users  
+If you are a Linux user you have a shortcut :) ...  
+1. You have to be inside the project folder.  
+2. You execute the following command in your terminal:  
+```
+chmod +x run.sh
+```  
+3. Finally, run:  
+```
+./run.sh
+```  
