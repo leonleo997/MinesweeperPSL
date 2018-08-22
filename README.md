@@ -1,4 +1,8 @@
 # PSL ASSESSMENT: Minesweeper 
+**Name:** Yesid Leonardo López Sierra  
+**Email:** yesid.leonardo.lopez@hotmail.com  
+**Cell phone number:** 3229105674  
+
 ## Description  
 This project has been developed in Java. It's a classic game of Minesweeper that is played using your terminal. When the game is begining you will see this:  
 ```
