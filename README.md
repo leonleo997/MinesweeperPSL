@@ -10,28 +10,10 @@ You will have to type the height, width and number of mines. Something like this
 8 15 10
 ```  
 Then the game request a movement:  
+```  
 ROUND #1
 
 Look the board: 
-     1  2   3   4 	5	  6	  7	  8	
-    _________________________________
-1	  |.  . 	. 	.	  .	  .	  .	  .	  |
-2	  |.  . 	. 	.	  .	  .	  .	  .	  |
-3	  |.  . 	. 	.	  .	  .	  .	  .	  |
-4	  |.  . 	. 	.	  .	  .	  .	  .	  |
-5	  |.  . 	. 	.	  .	  .	  .	  .	  |
-6	  |.  . 	. 	.	  .	  .	  .	  .	  |
-7	  |.  . 	. 	.	  .	  .	  .	  .	  |
-8	  |.  . 	. 	.	  .	  .	  .	  .	  |
-9	  |.  . 	. 	.	  .	  .	  .	  .	  |
-10	|.  . 	. 	.	  .	  .	  .	  .	  |
-11	|.  . 	. 	.	  .	  .	  .	  .	  |
-12	|.  . 	. 	.	  .	  .	  .	  .	  |
-13  |.  . 	. 	.	  .	  .	  .	  .	  |
-14	|.  . 	. 	.	  .	  .	  .	  .	  |
-15	|.  . 	. 	.	  .	  .	  .	  .	  |
-    _________________________________
-
 	1	2	3	4	5	6	7	8	
 	________________________________________________________________
 1	|.	.	.	.	.	.	.	.	|
@@ -53,6 +35,64 @@ Look the board:
 
 
 Type the row, col and the action. Each value separed by a blank space (For example:1 1 U)
+```  
+We have to choose the position of your action. For example: I want to mark the cell located at 1,1:  
+```  
+1 1 M
+
+Look the board: 
+	1	2	3	4	5	6	7	8	
+	________________________________________________________________
+1	|P	.	.	.	.	.	.	.	|
+2	|.	.	.	.	.	.	.	.	|
+3	|.	.	.	.	.	.	.	.	|
+4	|.	.	.	.	.	.	.	.	|
+5	|.	.	.	.	.	.	.	.	|
+6	|.	.	.	.	.	.	.	.	|
+7	|.	.	.	.	.	.	.	.	|
+8	|.	.	.	.	.	.	.	.	|
+9	|.	.	.	.	.	.	.	.	|
+10	|.	.	.	.	.	.	.	.	|
+11	|.	.	.	.	.	.	.	.	|
+12	|.	.	.	.	.	.	.	.	|
+13	|.	.	.	.	.	.	.	.	|
+14	|.	.	.	.	.	.	.	.	|
+15	|.	.	.	.	.	.	.	.	|
+	|________________________________________________________________
+
+Type the row, col and the action. Each value separed by a blank space (For example:1 1 U)
+
+```  
+Also, you can uncover a cell like this:  
+```  
+8 15 U
+
+Look the board: 
+
+	1	2	3	4	5	6	7	8	
+	________________________________________________________________
+1	|P	.	.	.	.	.	.	.	|
+2	|.	.	.	.	.	.	.	.	|
+3	|.	.	.	.	.	.	.	.	|
+4	|.	.	.	.	.	.	.	.	|
+5	|.	.	.	.	.	.	.	.	|
+6	|.	.	.	.	.	.	.	.	|
+7	|.	.	.	.	.	.	.	.	|
+8	|.	.	.	.	.	.	.	.	|
+9	|.	.	.	.	.	.	.	.	|
+10	|.	.	.	.	.	.	.	.	|
+11	|.	.	.	.	.	1	1	1	|
+12	|.	.	.	.	.	1	-	-	|
+13	|.	.	1	1	1	1	-	-	|
+14	|.	.	1	-	-	-	-	-	|
+15	|.	.	1	-	-	-	-	-	|
+	|________________________________________________________________
+
+Type the row, col and the action. Each value separed by a blank space (For example:1 1 U)
+```  
+
+
+Now you just have to enjoy the game :)
 
 ## Instructions to play for Linux  
 
