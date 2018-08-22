@@ -1,4 +1,4 @@
-//package co.edu.icesi.minesweeper.test;
+package co.edu.icesi.minesweeper.test;
 
 import static org.junit.Assert.assertEquals;
 
