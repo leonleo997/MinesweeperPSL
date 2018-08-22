@@ -1,4 +1,4 @@
-//package co.icesi.edu.logic;
+package co.icesi.edu.logic;
 
 /*
  * @author Yesid Leonardo López Sierra

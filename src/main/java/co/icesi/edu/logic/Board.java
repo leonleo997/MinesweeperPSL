@@ -1,4 +1,4 @@
-//package co.icesi.edu.logic;
+package co.icesi.edu.logic;
 
 import java.util.HashMap;
 import java.util.Random;
@@ -98,7 +98,7 @@ public class Board {
 	public boolean play(int row, int col, char action) {
 		boolean isGameOver = false;
 		Cell cell = cells.get(row + "," + col);
-		if (action == UNCOVER) {
+		if (action == UNCOVER && cell.isFlag()==!FLAG) {
 
 			switch (cell.getContent()) {
 			case MINE_CELL:
@@ -109,13 +109,17 @@ public class Board {
 
 			case DISABLED_CELL:
 				uncoverAdjacents(row, col);
+				break;
 			default:
 				cell.setHide(!HIDE);
 				cell.setFlag(!FLAG);
 				break;
 			}
-		} else if (action == MARK && !cell.isFlag() && cell.isHide() == HIDE) {
-			cell.setFlag(FLAG);
+		} else if (action == MARK && cell.isHide() == HIDE) {
+			if(cell.isFlag())
+				cell.setFlag(!FLAG);
+			else
+				cell.setFlag(FLAG);
 		}
 
 		return isGameOver;
@@ -174,6 +178,9 @@ public class Board {
 	 * @post: it returns a matrix that contains the board representation.
 	 */
 	public void show() {
+		
+		System.out.println("\nLook the board: ");
+		
 		for (int i = 1; i <= width; i++) {
 			for (int j = 1; j <= height; j++) {
 				Cell content = cells.get(j + "," + i);
